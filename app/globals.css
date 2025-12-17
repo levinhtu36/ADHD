@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --cream: #FDF6E3;
+  --cream-dark: #F5E6C8;
+  --brutal-black: #1a1a1a;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Brutalist Button Hover Effect */
+.btn-brutal {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-brutal:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #1a1a1a;
+}
+
+.btn-brutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #1a1a1a;
+}
+
+/* Star Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.star-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.star-float-delay {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* Accordion Animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 1000px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  transition: width 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+  border: 2px solid var(--brutal-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brutal-black);
+  border: 2px solid var(--cream);
+}
+
+/* Selection */
+::selection {
+  background-color: #F39C12;
+  color: #1a1a1a;
+}
