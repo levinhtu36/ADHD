@@ -1,1 +1,302 @@
+import Link from 'next/link';
+import FAQ from '@/components/FAQ';
+import { StarRed, StarGreen, StarYellow, Sparkle } from '@/components/Stars';
+
+export default function KnowledgePage() {
+  return (
+    <div className="min-h-screen py-8 md:py-12">
+      {/* Hero Section */}
+      <section className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="text-center mb-8">
+          <div className="flex justify-center gap-4 mb-4">
+            <StarRed className="w-10 h-10 star-float" />
+            <StarGreen className="w-8 h-8 star-float-delay" />
+          </div>
+          <h1 className="text-3xl md:text-5xl font-black text-brutal-black mb-4">
+            Kiến thức về ADHD
+          </h1>
+          <p className="text-lg text-brutal-black/70 max-w-2xl mx-auto">
+            Hiểu đúng để hỗ trợ con tốt hơn
+          </p>
+        </div>
+      </section>
+
+      {/* Section: ADHD là gì? */}
+      <section id="what" className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="bg-cream-dark border-3 border-brutal-black p-6 md:p-8 shadow-brutal">
+          <h2 className="text-2xl md:text-3xl font-black mb-6 flex items-center gap-3">
+            <span className="w-10 h-10 bg-brutal-red text-white flex items-center justify-center">1</span>
+            ADHD là gì?
+          </h2>
+
+          <div className="space-y-4 text-lg leading-relaxed">
+            <p>
+              ADHD là viết tắt của <em>Attention Deficit Hyperactivity Disorder</em>, 
+              thường gọi là <strong>Rối loạn Tăng động Giảm chú ý</strong>.
+            </p>
+
+            <p>
+              ADHD là một <strong>dạng phát triển khác biệt của não bộ</strong>, trong đó 
+              trẻ có thể gặp khó khăn với:
+            </p>
+
+            <ul className="space-y-2 ml-4">
+              <li className="flex items-start gap-3">
+                <span className="text-brutal-red font-bold">•</span>
+                <span>Tập trung chú ý</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brutal-red font-bold">•</span>
+                <span>Kiểm soát hành vi bốc đồng</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brutal-red font-bold">•</span>
+                <span>Hoặc quá hiếu động so với các bạn cùng tuổi</span>
+              </li>
+            </ul>
+
+            <div className="bg-brutal-green/20 border-2 border-brutal-green p-4 mt-6">
+              <p className="font-semibold">
+                ✨ Điều quan trọng cần hiểu: ADHD <strong>không phải do trẻ hư</strong>, 
+                <strong> không phải lỗi của cha mẹ</strong>, và <strong>không phải khuyết điểm</strong>. 
+                Trẻ ADHD hoàn toàn có thể phát triển tốt nếu được hiểu đúng và hỗ trợ phù hợp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Video YouTube */}
+      <section id="video" className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="bg-brutal-black text-cream p-6 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-black mb-6 flex items-center gap-3">
+            <span className="w-10 h-10 bg-brutal-yellow text-brutal-black flex items-center justify-center">2</span>
+            Video giải thích ADHD
+          </h2>
+
+          <div className="aspect-video bg-brutal-black border-3 border-cream">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/_jcUnne8sf4"
+              title="Video giải thích ADHD"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          <p className="mt-4 text-cream/70 text-sm">
+            Video giải thích dễ hiểu về ADHD dành cho phụ huynh Việt Nam.
+          </p>
+        </div>
+      </section>
+
+      {/* Section: Dấu hiệu theo độ tuổi */}
+      <section id="signs" className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="bg-white border-3 border-brutal-black p-6 md:p-8 shadow-brutal">
+          <h2 className="text-2xl md:text-3xl font-black mb-6 flex items-center gap-3">
+            <span className="w-10 h-10 bg-brutal-orange text-white flex items-center justify-center">3</span>
+            Dấu hiệu ADHD theo độ tuổi
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Khó tập trung */}
+            <div className="border-2 border-brutal-black p-4">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-brutal-red/20 border-2 border-brutal-red flex items-center justify-center">
+                  <span>🎯</span>
+                </div>
+                <h3 className="font-bold">Khó tập trung</h3>
+              </div>
+              <ul className="text-sm space-y-1 text-brutal-black/80">
+                <li>• Dễ xao nhãng, hay quên</li>
+                <li>• Khó hoàn thành bài tập</li>
+                <li>• Không lắng nghe khi được nói chuyện</li>
+                <li>• Né tránh việc cần suy nghĩ lâu</li>
+              </ul>
+            </div>
+
+            {/* Hiếu động */}
+            <div className="border-2 border-brutal-black p-4">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-brutal-yellow/20 border-2 border-brutal-yellow flex items-center justify-center">
+                  <span>⚡</span>
+                </div>
+                <h3 className="font-bold">Hiếu động</h3>
+              </div>
+              <ul className="text-sm space-y-1 text-brutal-black/80">
+                <li>• Không ngồi yên được</li>
+                <li>• Chạy nhảy, leo trèo quá mức</li>
+                <li>• Nói rất nhiều</li>
+                <li>• Luôn "tràn năng lượng"</li>
+              </ul>
+            </div>
+
+            {/* Bốc đồng */}
+            <div className="border-2 border-brutal-black p-4">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-brutal-green/20 border-2 border-brutal-green flex items-center justify-center">
+                  <span>💨</span>
+                </div>
+                <h3 className="font-bold">Bốc đồng</h3>
+              </div>
+              <ul className="text-sm space-y-1 text-brutal-black/80">
+                <li>• Trả lời khi người khác chưa nói xong</li>
+                <li>• Khó chờ đến lượt</li>
+                <li>• Hay chen ngang</li>
+                <li>• Hành động không suy nghĩ</li>
+              </ul>
+            </div>
+
+            {/* Ảnh hưởng */}
+            <div className="border-2 border-brutal-black p-4">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-brutal-pink/20 border-2 border-brutal-pink flex items-center justify-center">
+                  <span>📚</span>
+                </div>
+                <h3 className="font-bold">Ảnh hưởng học tập & quan hệ</h3>
+              </div>
+              <ul className="text-sm space-y-1 text-brutal-black/80">
+                <li>• Kết quả học tập không ổn định</li>
+                <li>• Khó kết bạn hoặc giữ bạn</li>
+                <li>• Căng thẳng trong gia đình</li>
+                <li>• Tự ti về bản thân</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Nguyên nhân & hiểu đúng – hiểu sai */}
+      <section id="causes" className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="bg-cream-dark border-3 border-brutal-black p-6 md:p-8 shadow-brutal">
+          <h2 className="text-2xl md:text-3xl font-black mb-6 flex items-center gap-3">
+            <span className="w-10 h-10 bg-brutal-green text-white flex items-center justify-center">4</span>
+            Nguyên nhân & Hiểu đúng – Hiểu sai
+          </h2>
+
+          <div className="space-y-4">
+            <div className="bg-white border-2 border-brutal-black p-4">
+              <div className="flex items-start gap-3">
+                <span className="text-brutal-green text-2xl">✓</span>
+                <div>
+                  <p className="font-semibold">ADHD liên quan đến cách não bộ vận hành</p>
+                  <p className="text-sm text-brutal-black/70 mt-1">
+                    Đây là sự khác biệt về phát triển thần kinh, không phải bệnh hay khuyết tật.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brutal-black p-4">
+              <div className="flex items-start gap-3">
+                <span className="text-brutal-red text-2xl">✗</span>
+                <div>
+                  <p className="font-semibold">Không phải do nuôi dạy sai</p>
+                  <p className="text-sm text-brutal-black/70 mt-1">
+                    Ba mẹ không gây ra ADHD. Cách nuôi dạy có thể giúp hỗ trợ, nhưng không phải nguyên nhân.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brutal-black p-4">
+              <div className="flex items-start gap-3">
+                <span className="text-brutal-red text-2xl">✗</span>
+                <div>
+                  <p className="font-semibold">Không phải do "lười" hay "hư"</p>
+                  <p className="text-sm text-brutal-black/70 mt-1">
+                    Trẻ ADHD không cố tình. Não bộ của trẻ hoạt động khác biệt và cần được hỗ trợ phù hợp.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Khi nào cần gặp chuyên gia? */}
+      <section id="expert" className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="bg-brutal-red text-white p-6 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-black mb-6 flex items-center gap-3">
+            <span className="w-10 h-10 bg-white text-brutal-red flex items-center justify-center">5</span>
+            Khi nào cần gặp chuyên gia?
+          </h2>
+
+          <div className="space-y-4">
+            <div className="bg-white/10 border-2 border-white/30 p-4 flex items-start gap-3">
+              <span className="text-2xl">⏰</span>
+              <div>
+                <p className="font-semibold">Hành vi kéo dài</p>
+                <p className="text-white/80 text-sm mt-1">
+                  Các biểu hiện xuất hiện từ 6 tháng trở lên và không cải thiện.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white/10 border-2 border-white/30 p-4 flex items-start gap-3">
+              <span className="text-2xl">📉</span>
+              <div>
+                <p className="font-semibold">Ảnh hưởng rõ đến học tập / quan hệ</p>
+                <p className="text-white/80 text-sm mt-1">
+                  Con gặp khó khăn ở trường, với bạn bè, hoặc trong gia đình.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white/10 border-2 border-white/30 p-4 flex items-start gap-3">
+              <span className="text-2xl">💭</span>
+              <div>
+                <p className="font-semibold">Ba mẹ cảm thấy lo lắng kéo dài</p>
+                <p className="text-white/80 text-sm mt-1">
+                  Nếu bạn liên tục lo lắng về sự phát triển của con, hãy tìm đến chuyên gia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6">
+            <Link
+              href="/support#resources"
+              className="btn-brutal inline-block bg-white text-brutal-red font-bold py-3 px-6 border-3 border-white shadow-brutal-sm"
+            >
+              Xem danh sách chuyên gia →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: FAQ */}
+      <section id="faq" className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-black mb-2 flex items-center gap-3">
+            <Sparkle color="#F39C12" className="w-8 h-8" />
+            05 Câu hỏi thường gặp
+          </h2>
+          <p className="text-brutal-black/70">
+            Bấm vào câu hỏi để xem câu trả lời
+          </p>
+        </div>
+
+        <FAQ />
+      </section>
+
+      {/* CTA Section */}
+      <section className="max-w-4xl mx-auto px-4">
+        <div className="bg-cream-dark border-3 border-brutal-black p-6 md:p-8 text-center shadow-brutal">
+          <h2 className="text-2xl font-black mb-4">Bạn muốn đánh giá nguy cơ ADHD?</h2>
+          <p className="text-brutal-black/70 mb-6">
+            Làm bài test sàng lọc miễn phí, chỉ mất 5-10 phút.
+          </p>
+          <Link
+            href="/test"
+            className="btn-brutal inline-block bg-brutal-orange text-white font-bold py-3 px-8 border-3 border-brutal-black shadow-brutal"
+          >
+            Làm bài test ngay
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
 
