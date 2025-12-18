@@ -64,31 +64,31 @@ export default function HomePage() {
           Website này giúp gì cho bạn?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Feature 1 */}
-          <div className="bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow">
+          <Link href="/test" className="block bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow hover:-translate-y-1">
             <div className="w-16 h-16 bg-brutal-red/20 border-3 border-brutal-black flex items-center justify-center mb-4">
               <span className="text-3xl">📋</span>
             </div>
-            <h3 className="text-xl font-bold mb-2">Bài test sàng lọc</h3>
+            <h3 className="text-xl font-bold mb-2">Đánh giá nguy cơ</h3>
             <p className="text-brutal-black/70">
               24 câu hỏi giúp đánh giá nguy cơ ADHD dựa trên hành vi của con trong 6 tháng gần đây.
             </p>
-          </div>
+          </Link>
 
           {/* Feature 2 */}
-          <div className="bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow">
+          <Link href="/knowledge" className="block bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow hover:-translate-y-1">
             <div className="w-16 h-16 bg-brutal-green/20 border-3 border-brutal-black flex items-center justify-center mb-4">
               <span className="text-3xl">📚</span>
             </div>
-            <h3 className="text-xl font-bold mb-2">Kiến thức ADHD</h3>
+            <h3 className="text-xl font-bold mb-2">Kiến thức đầy đủ</h3>
             <p className="text-brutal-black/70">
               Hiểu đúng về ADHD, dấu hiệu theo độ tuổi, nguyên nhân và khi nào cần gặp chuyên gia.
             </p>
-          </div>
+          </Link>
 
           {/* Feature 3 */}
-          <div className="bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow">
+          <Link href="/support" className="block bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow hover:-translate-y-1">
             <div className="w-16 h-16 bg-brutal-yellow/20 border-3 border-brutal-black flex items-center justify-center mb-4">
               <span className="text-3xl">🏠</span>
             </div>
@@ -96,7 +96,18 @@ export default function HomePage() {
             <p className="text-brutal-black/70">
               Các phương pháp hỗ trợ con tại nhà, phối hợp với giáo viên và tài nguyên tham khảo.
             </p>
-          </div>
+          </Link>
+
+          {/* Feature 4 */}
+          <Link href="/support#resources" className="block bg-white border-3 border-brutal-black p-6 shadow-brutal hover:shadow-brutal-lg transition-shadow hover:-translate-y-1">
+            <div className="w-16 h-16 bg-brutal-orange/20 border-3 border-brutal-black flex items-center justify-center mb-4">
+              <span className="text-3xl">📖</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Tài nguyên tham khảo</h3>
+            <p className="text-brutal-black/70">
+              Video, sách, cộng đồng và địa chỉ thăm khám hỗ trợ chuyên môn.
+            </p>
+          </Link>
         </div>
       </section>
 

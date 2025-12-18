@@ -86,6 +86,26 @@ export default function Footer() {
                   → ADHDTichCuc.com
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.fahasa.com/hieu-ve-adhd-vuot-qua-thach-thuc-va-phat-trien-cung-roi-loan-tang-dong-giam-chu-y.html?srsltid=AfmBOooEyd0tnZpDKEZdjxTch9zoo1rq6Rzec4DnLX2frmNetaq5E83_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brutal-yellow transition-colors"
+                >
+                  → Sách Hiểu về ADHD
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.fahasa.com/nuoi-day-tre-mac-chung-roi-loan-tang-dong-giam-chu-y-adhd.html?srsltid=AfmBOoqQe013y92N3Z89jMktXyBvJ4r5iOFgNVmoAXoYs6wt2E3kR9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brutal-yellow transition-colors"
+                >
+                  → Sách Nuôi dạy trẻ mắc chứng ADHD
+                </a>
+              </li>
             </ul>
           </div>
         </div>
