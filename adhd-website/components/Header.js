@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -19,6 +20,13 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/logo.svg"
+              alt="ADHD Check Logo"
+              width={48}
+              height={48}
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
             <span className="text-2xl md:text-3xl font-black text-brutal-black">
               ADHD<span className="text-brutal-red">Check</span>
             </span>

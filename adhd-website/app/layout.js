@@ -6,6 +6,11 @@ export const metadata = {
   title: 'Sàng lọc nguy cơ ADHD cho trẻ 7-12 tuổi | ADHDCheck',
   description: 'Bài test tham khảo giúp ba mẹ đánh giá nguy cơ ADHD và hiểu cách hỗ trợ con. Dành cho trẻ 7-12 tuổi.',
   keywords: 'ADHD, tăng động giảm chú ý, sàng lọc ADHD, trẻ em, test ADHD',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/logo.svg',
+  },
 };
 
 export default function RootLayout({ children }) {

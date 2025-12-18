@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#FDF6E3"/>
+
+  <!-- Simplified gear -->
+  <circle cx="16" cy="10" r="5" fill="#9CA3AF"/>
+  <circle cx="16" cy="10" r="2" fill="#FDF6E3"/>
+
+  <!-- Person head simplified -->
+  <circle cx="16" cy="18" r="6" fill="#C68642"/>
+
+  <!-- Hair -->
+  <circle cx="13" cy="14" r="3" fill="#2D1B0E"/>
+  <circle cx="16" cy="13" r="3" fill="#2D1B0E"/>
+  <circle cx="19" cy="14" r="3" fill="#2D1B0E"/>
+
+  <!-- Eyes -->
+  <circle cx="14" cy="18" r="1" fill="#2D1B0E"/>
+  <circle cx="18" cy="18" r="1" fill="#2D1B0E"/>
+
+  <!-- Shirt hint -->
+  <path d="M10 32 L12 25 Q16 23 20 25 L22 32 Z" fill="#F39C12"/>
+</svg>

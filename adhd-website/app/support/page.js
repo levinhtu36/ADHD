@@ -282,14 +282,14 @@ export default function SupportPage() {
                 </a>
               </div>
               <div className="bg-white border-2 border-brutal-black p-3">
-                <p className="text-brutal-black/80">
-                  📚 Sách: "Hiểu về ADHD" (New York Times Best Seller)
-                </p>
+                <a href="https://www.fahasa.com/hieu-ve-adhd-vuot-qua-thach-thuc-va-phat-trien-cung-roi-loan-tang-dong-giam-chu-y.html?srsltid=AfmBOooEyd0tnZpDKEZdjxTch9zoo1rq6Rzec4DnLX2frmNetaq5E83_" target="_blank" rel="noopener noreferrer" className="text-brutal-red hover:underline">
+                  → Sách: "Hiểu về ADHD" (New York Times Best Seller)
+                </a>
               </div>
               <div className="bg-white border-2 border-brutal-black p-3">
-                <p className="text-brutal-black/80">
-                  📚 Sách: "Nuôi dạy trẻ mắc chứng rối loạn giảm chú ý ADHD"
-                </p>
+                <a href="https://www.fahasa.com/nuoi-day-tre-mac-chung-roi-loan-tang-dong-giam-chu-y-adhd.html?srsltid=AfmBOoqQe013y92N3Z89jMktXyBvJ4r5iOFgNVmoAXoYs6wt2E3kR9" target="_blank" rel="noopener noreferrer" className="text-brutal-red hover:underline">
+                  → Sách: "Nuôi dạy trẻ mắc chứng rối loạn giảm chú ý ADHD"
+                </a>
               </div>
             </div>
           </div>
